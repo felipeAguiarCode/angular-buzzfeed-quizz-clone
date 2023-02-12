@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "projeto-buzzfeed": {
+    "angular5-buzzfeed2": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/projeto-buzzfeed",
+            "outputPath": "dist/angular5-buzzfeed2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "projeto-buzzfeed:build:production"
+              "browserTarget": "angular5-buzzfeed2:build:production"
             },
             "development": {
-              "browserTarget": "projeto-buzzfeed:build:development"
+              "browserTarget": "angular5-buzzfeed2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "projeto-buzzfeed:build"
+            "browserTarget": "angular5-buzzfeed2:build"
           }
         },
         "test": {
@@ -97,8 +97,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }

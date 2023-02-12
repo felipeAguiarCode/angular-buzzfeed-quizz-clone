@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/projeto-buzzfeed'),
+      dir: require('path').join(__dirname, './coverage/angular5-buzzfeed2'),
       subdir: '.',
       reporters: [
         { type: 'html' },
