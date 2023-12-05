@@ -21,8 +21,15 @@
 
   </div>
 
-  <div *ngIf=finished class="quizz_results">
-    <h1>O Seu resultado é:</h1>
-    <p>{{answerSelected}}</p>
+  <div *ngIf=finished>
+    <div *ngIf="optionAorB == 'A'; else opcaoB" class="quizz_results_A">
+      <h1>O Seu resultado é:</h1>
+      <p>{{answerSelected}}</p>
+    </div>
+
+    <ng-template #opcaoB class="quizz_results_B">
+      <h1>O Seu resultado é:</h1>
+      <p>{{answerSelected}}</p>
+    </ng-template>
   </div>
 </div>

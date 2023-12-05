@@ -22,6 +22,8 @@ export class QuizzComponent implements OnInit {
 
   finished:boolean = false
 
+  optionAorB = ""
+
   constructor() { }
 
   ngOnInit(): void {
@@ -57,6 +59,7 @@ export class QuizzComponent implements OnInit {
       this.finished = true
       this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results ]
     }
+    console.log(this.answerSelected);
   }
 
   async checkResult(anwsers:string[]){
@@ -71,6 +74,10 @@ export class QuizzComponent implements OnInit {
           return current
         }
     })
+
+    this.optionAorB = result
+
+    console.log(result);
 
     return result
   }
