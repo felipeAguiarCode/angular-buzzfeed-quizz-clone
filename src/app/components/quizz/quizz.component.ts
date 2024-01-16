@@ -34,9 +34,6 @@ export class QuizzComponent implements OnInit {
 
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
-
-      console.log(this.questionIndex)
-      console.log(this.questionMaxIndex)
     }
 
   }
@@ -56,6 +53,7 @@ export class QuizzComponent implements OnInit {
       const finalAnswer:string = await this.checkResult(this.answers)
       this.finished = true
       this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results ]
+      console.log(this.answerSelected);
     }
   }
 
