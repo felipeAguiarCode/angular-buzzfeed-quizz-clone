@@ -5,11 +5,11 @@
     <h3>{{title}}</h3>
   </div>
 
-  <div *ngIf=!finished class="quizz_questions">
+  <div *ngIf="!finished" class="quizz_questions">
       <h3>{{questionSelected.question}}</h3>
   </div>
 
-  <div *ngIf=!finished class="quizz_options">
+  <div *ngIf="!finished" class="quizz_options">
 
     <button
       *ngFor="let option of questionSelected.options; let i = index"
@@ -21,8 +21,14 @@
 
   </div>
 
-  <div *ngIf=finished class="quizz_results">
-    <h1>O Seu resultado é:</h1>
-    <p>{{answerSelected}}</p>
+  <div *ngIf="finished" class="quizz_results">
+    <h3>Resultado</h3>
+    <div *ngIf="answerSelected === 'true'" class="vilain">
+      <h3>Nossa, você é um vilão!</h3>
+     
+    </div>
+    <div *ngIf="answerSelected === 'false'" class="hero">
+      <h3>Parabéns, você é um herói!</h3>
+    
   </div>
 </div>
