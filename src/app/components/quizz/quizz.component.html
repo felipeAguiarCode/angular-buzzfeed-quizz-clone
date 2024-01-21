@@ -1,18 +1,18 @@
 <div class="quizz__container">
 
   <div class="quizz_logo">
-    <img src="assets/imgs/logo.png" alt="" srcset="">
-    <h3>{{title}}</h3>
+    <img src="assets/imgs/quizz-icon.png" alt="" srcset="">
+    <h3 *ngIf=!finished >{{title}}</h3>
   </div>
 
   <div *ngIf=!finished class="quizz_questions">
-      <h3>{{questionSelected.question}}</h3>
+      <h3>{{questionSelected?.question}}</h3>
   </div>
 
   <div *ngIf=!finished class="quizz_options">
 
     <button
-      *ngFor="let option of questionSelected.options; let i = index"
+      *ngFor="let option of questionSelected?.options; let i = index"
       (click)="playerChoose(option.alias)"
       class="btn-option"
     >
@@ -22,7 +22,12 @@
   </div>
 
   <div *ngIf=finished class="quizz_results">
-    <h1>O Seu resultado é:</h1>
-    <p>{{answerSelected}}</p>
+    <h2>Essas linguagens com certeza atendem o seu perfil</h2>
+
+    <ul>
+      <li *ngFor="let a of answerSelected"> {{a}}</li>
+    </ul>
+
+    <button class="btn-option" (click)="returnToInitialQuiz()">voltar ao inicio</button>
   </div>
 </div>
