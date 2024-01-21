@@ -5,7 +5,7 @@ import { question, questions } from 'src/app/data/types';
 @Component({
   selector: 'app-quizz',
   templateUrl: './quizz.component.html',
-  styleUrls: ['./quizz.component.css']
+  styleUrls: ['./quizz.component.css', './responsive.component.css']
 })
 
 export class QuizzComponent implements OnInit {
