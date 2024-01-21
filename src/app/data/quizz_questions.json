@@ -1,0 +1,86 @@
+{
+  "title":"qual linguagem de programação mais combina com você ?",
+  "questions":[
+    {
+      "id":1,
+      "question": "prefere usar mais inferência dinâmica ou estática ?",
+      "options":[
+        {"id": 1, "name":"dinâmica", "alias":"A"},
+        {"id": 2, "name":"estática", "alias":"B"},
+        {"id": 3, "name":"tanto faz", "alias":"N"}
+      ]
+    },
+    {
+      "id":2,
+      "question": "parâmetros nomeados são interessantes para você ?",
+      "options":[
+        {"id": 1, "name":"são muito bons", "alias":"A"},
+        {"id": 3, "name":"são horríveis", "alias":"B"},
+        {"id": 3, "name":"tanto faz", "alias":"N"}
+      ]
+    },
+    {
+      "id":3,
+      "question": "o que acha de linguagem com alta verbosidade ?",
+      "options":[
+        {"id": 1, "name":"acho muito legal", "alias":"B"},
+        {"id": 2, "name":"acho horrível", "alias":"A"},
+        {"id": 3, "name":"tanto faz", "alias":"N"}
+        
+      ]
+    },
+    {
+      "id":4,
+      "question": "escolha, linguagens interpretadas ou compiladas ",
+      "options":[
+        {"id": 1, "name":"interpretadas", "alias":"A"},
+        {"id": 2, "name":"compiladas", "alias":"B"},
+        {"id": 2, "name":"tanto faz", "alias":"N"}
+      ]
+    },
+    {
+      "id":5,
+      "question": "prefere linguagens que trabalham com operações multi-thread ou single-thread ?",
+      "options":[
+        {"id": 1, "name":"multi-thread", "alias":"A"},
+        {"id": 2, "name":"single-thread", "alias":"B"},
+        {"id": 2, "name":"tanto faz", "alias":"N"}
+      ]
+    }
+  ],
+  "results":{
+    "A": [
+      "PHP",
+      "JavaScript(node.js)",
+      "Lua",
+      "Groovy",
+      "Ruby",
+      "python"
+    ],
+    "B": [
+      "Java",
+      "C++",
+      "C#",
+      "Rust",
+      "C",
+      "Ada"
+    ],
+
+    "N": [
+      "Java",
+      "C++",
+      "C#",
+      "Rust",
+      "C",
+      "Ada",
+      "PHP",
+      "JavaScript(node.js)",
+      "Lua",
+      "Groovy",
+      "Ruby",
+      "python"
+    ]
+
+
+  }
+}

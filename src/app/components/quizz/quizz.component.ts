@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import quizz_questions from "../../../assets/data/quizz_questions.json"
+import quizz_questions from "../../data/quizz_questions.json"
+import { question, questions } from 'src/app/data/types';
 
 @Component({
   selector: 'app-quizz',
@@ -11,11 +12,11 @@ export class QuizzComponent implements OnInit {
 
   title:string = ""
 
-  questions:any
-  questionSelected:any
+  questions:questions |undefined
+  questionSelected: question |undefined
 
   answers:string[] = []
-  answerSelected:string =""
+  answerSelected:string[] = []
 
   questionIndex:number =0
   questionMaxIndex:number=0
@@ -26,17 +27,12 @@ export class QuizzComponent implements OnInit {
 
   ngOnInit(): void {
     if(quizz_questions){
-      this.finished = false
       this.title = quizz_questions.title
-
+  
       this.questions = quizz_questions.questions
       this.questionSelected = this.questions[this.questionIndex]
 
-      this.questionIndex = 0
       this.questionMaxIndex = this.questions.length
-
-      console.log(this.questionIndex)
-      console.log(this.questionMaxIndex)
     }
 
   }
@@ -44,14 +40,17 @@ export class QuizzComponent implements OnInit {
   playerChoose(value:string){
     this.answers.push(value)
     this.nextStep()
-
   }
 
   async nextStep(){
     this.questionIndex+=1
 
     if(this.questionMaxIndex > this.questionIndex){
+      if (this.questions) {
         this.questionSelected = this.questions[this.questionIndex]
+      }else {
+        throw new Error("the questions does not exist");
+      }
     }else{
       const finalAnswer:string = await this.checkResult(this.answers)
       this.finished = true
@@ -73,6 +72,15 @@ export class QuizzComponent implements OnInit {
     })
 
     return result
+  }
+
+  returnToInitialQuiz() {
+    this.finished = false
+    this.questionIndex = 0
+
+    if (this.questions) {
+      this.questionSelected = this.questions[this.questionIndex]
+    }
   }
 
 }
