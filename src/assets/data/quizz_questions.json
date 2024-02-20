@@ -1,55 +1,67 @@
 {
-  "title":"Você seria um heroi ou vilão ?",
+  "title":"Sonserina, Lufa-Lufa, Corvinal ou Grifinória? Faça o teste do Chapéu Seletor e descubra qual sua casa de Hogwarts!",
   "questions":[
     {
       "id":1,
-      "question": "Qual super poder você escolheria ?",
+      "question": "No seu primeiro ano em Hogwarts, que tipo de aluno você seria?",
       "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+        {"id": 1, "name":"Aquele que se juntaria as pessoas mais populares", "alias":"A"},
+        {"id": 2, "name":"Aquele que se juntaria as pessoas que parecem mais inteligentes", "alias":"B"},
+        {"id": 3, "name":"Aquele que se juntaria às pessoas que primeiro te acolhessem", "alias":"C"},
+        {"id": 4, "name":"Aquele que não se juntaria a ninguém, pois você não precisa de ninguém", "alias":"D"}
       ]
     },
     {
       "id":2,
-      "question": "Quem você salvaria primeiro ?",
+      "question": "Por qual motivo você ficaria na detenção em Hogwarts?",
       "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+        {"id": 1, "name":"Por bater em um colega para defender um amigo", "alias":"A"},
+        {"id": 2, "name":"Por invadir a Seção Restrita da biblioteca", "alias":"B"},
+        {"id": 3, "name":"Por escrever uma mensagem zombando do seu rival numa parede", "alias":"C"},
+        {"id": 4, "name":"Por tentar explorar a Floresta Proibida", "alias":"D"}
       ]
     },
     {
       "id":3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+      "question": "Qual dos adjetivos abaixo mais te ofenderia caso você fosse chamado?",
       "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+        {"id": 1, "name":"Ignorante", "alias":"A"},
+        {"id": 2, "name":"Falso", "alias":"B"},
+        {"id": 3, "name":"Irrelevante", "alias":"C"},
+        {"id": 4, "name":"Covarde", "alias":"D"}
       ]
     },
     {
       "id":4,
-      "question": "Qual o seu maior foco ?",
+      "question": "Se na sua sala de aula, houvesse um colega excluído por todos por ser diferente, e tivesse faltando uma pessoa para preencher seu grupo de trabalho, o que você faria?",
       "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+        {"id": 1, "name":"Teria pena e chamaria o colega para compor seu grupo", "alias":"A"},
+        {"id": 2, "name":"Preferia ficar com o número de pessoas reduzido para não ter que chamá-lo", "alias":"B"},
+        {"id": 3, "name":"Chamaria o colega mas seria bem incisivo na hora de alertá-lo sobre as atribuições do trabalho", "alias":"C"},
+        {"id": 4, "name":"Não chamaria e torceria para que outros amigos de outros grupos também não chamassem", "alias":"D"}
       ]
     },
     {
       "id":5,
-      "question": "Qual o seu apelido de super ser ?",
+      "question": "Se você soubesse que uma pessoa que você detesta tivesse desrespeitado alguma regra importante da escola, o que você faria?",
       "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+        {"id": 1, "name":"Nada, não perderia seu tempo com isso", "alias":"A"},
+        {"id": 2, "name":"Ameaçava contar para um professor caso ela te desse motivos", "alias":"B"},
+        {"id": 3, "name":"Contaria a um professor na primeira oportunidade", "alias":"C"},
+        {"id": 4, "name":"Espalharia pela escola toda o que a pessoa tinha feito", "alias":"D"}
       ]
     }
   ],
   "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+    "A": "Lufa-Lufa",
+    "B": "Corvinal",
+    "C": "Grifinória",
+    "D": "Sonserina"
+  },
+  "resultDescription": {
+    "A": "Parabéns, você pertence à Casa do Texugo. Para começar, é importante ter em mente que a Lufa-Lufa não é a Casa menos importante ou mais sem graça de Hogwarts. Os lufanos, na verdade são tão corajosos, ambiciosos e inteligentes quanto os alunos das outras Casas, mas com uma diferença: eles não se exibem. A Lufa-Lufa é a casa daqueles mais verdadeiros e leais, daqueles protegem sem olhar a quem, e que nunca vão deixar de lado as pessoas que amam. É a Casa que menos produziu bruxos das trevas, pois é difícil algum lufano decidir trapecear. Eles trabalham duro e não são intimidados por problemas. No filme Harry Potter, personagens como Cedrico Diggory, Newt Scamander, Pomona Sprout e Ninfadora Tonks são alguns dos represenates da Lufa-Lufa.",
+    "B": "Parabéns, você pertence à Casa da Águia. A Corvinal é onde estão os bruxos mais inteligentes de todos. Eles são espirituosos, mente aberta, excêntricos e verdadeiros gênios. É de lá que saem os melhores escritores, inventores e artistas no geral. Ao contrário da maioria das pessoas das outras Casas, na Corvinal os estudantes valorizam as diferenças. São pessoas reservadas, mas que acreditam que estilos, preferências e crenças devem ser respeitados e valorizados. No filme Harry Potter os principais personagens à pertencer a Corvinal são Luna Lovegood, Filios Flitwick, Cho Chang e Sibila Trelawney.",
+    "C": "Parabéns, você foi selecionado para a Casa do Leão. A Grifinória é a casa onde os mais corajosos e ousados terminam. Nela, todos são companheiros e dispostos a arriscar qualquer coisa para ajudar os que amam. Há quem diga que os grifinórios são exibicionistas, mas não é bem verdade. Eles apenas adoram sua Casa e levantam sua bandeira com orgulho. Lutam e se engajam em qualquer batalha, e por isso acabam deixando as outras Casas à sua sombra. Em Harry Potter, quase todos os personagens principais são da Grifinória, incluindo o próprio Harry, Rony, Hermione, Neville, Fred e Jorge e Alvo Dumbledore.",
+    "D": "Parabéns, você pertence à casa da Serpente! Ao contrário do que muita gente acredita, a Sonserina não é somente a Casa de pessoas más e bruxos das trevas. É a Casa daqueles que entram para vencer, dos poderosos, daqueles cuja reputação nem sempre é das melhores, mas que não importa o que outros achem, são auto-suficientes. Se você foi escolhido para a Casa de Salazar Slytherin, você foi destinado à grandeza. A Sonserina tente a aceitar estudantes que venham de uma longa linhagem de bruxos, mas é normal que praticamente todos os sonserinos hoje tenham ao menos um trouxa na família - e isso não é uma vergonha. No filme Harry Potter, personagens como Draco Malfoy, Belatriz Lestrange, Severo Snape, Horacio Slughorn, Voldemort e até mesmo o feiticeiro Merlin pertenceram a Sonserina."
   }
 }
