@@ -16,6 +16,7 @@
       (click)="playerChoose(option.alias)"
       class="btn-option"
     >
+    <img src= {{option.name}} alt=''>
       {{option.name}}
     </button>
 
@@ -23,6 +24,7 @@
 
   <div *ngIf=finished class="quizz_results">
     <h1>O Seu resultado é:</h1>
-    <p>{{answerSelected}}</p>
+    <h3>{{answerSelected}}</h3>
+    <p>{{answerDescription}}</p>
   </div>
 </div>

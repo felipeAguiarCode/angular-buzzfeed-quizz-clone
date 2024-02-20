@@ -73,3 +73,10 @@
   justify-content: center;
   align-items: center;
 }
+.quizz_results p {
+  text-align: center;
+}
+
+.quizz_results h3 {
+  padding: 0 1rem;
+}

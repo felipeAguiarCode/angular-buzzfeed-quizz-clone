@@ -16,6 +16,7 @@ export class QuizzComponent implements OnInit {
 
   answers:string[] = []
   answerSelected:string =""
+  answerDescription:string =""
 
   questionIndex:number =0
   questionMaxIndex:number=0
@@ -56,6 +57,7 @@ export class QuizzComponent implements OnInit {
       const finalAnswer:string = await this.checkResult(this.answers)
       this.finished = true
       this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results ]
+      this.answerDescription = quizz_questions.resultDescription[finalAnswer as keyof typeof quizz_questions.results ]
     }
   }
 
